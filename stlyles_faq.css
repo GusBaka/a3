@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #e0f7fa; 
+}
+
+.home-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #00796b; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px; 
+}
+
+.topic {
+    background-color: #ffffff; 
+    border: 2px solid #00796b; 
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(45% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topic h2 {
+    color: #004d40; 
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.topic p {
+    color: #555;
+    line-height: 1.4;
+    font-size: 1em;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: flex-end; 
+}
+
+.link-button:hover {
+    background-color: #004d40; 
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .topic {
+        width: calc(100% - 20px); 
+    }
+}
+
+body::before {
+    content: "";
+    background: url('https://www.transparenttextures.com/patterns/paper-fibers.png'), 
+                linear-gradient(to bottom, #e0f7fa, #81d4fa); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Adicionando estilos complementares */
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #00796b;
+    font-size: 1em;
+}
+
+/* Estilo para títulos de nível 3 */
+h3 {
+    color: #004d40;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para listas */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1em;
+}
+
+/* Estilo para blocos de citações */
+blockquote {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 5px solid #00796b;
+    font-style: italic;
+    color: #555;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* Estilo para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #00796b;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+/* Estilo para campos de formulário */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #00796b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
